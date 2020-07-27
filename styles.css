@@ -39,12 +39,12 @@ body{
    align-items: center;
 }
 
-li{
+/* li{
     list-style: none;
     color: white;
     font-size: large;
     font-weight: 600;      
-}
+} */
 
 header{
     background-color: var(--green-gray);
@@ -86,13 +86,19 @@ a{
     margin-right: 10px;
 }
 
+.navlink li{
+    list-style: none;
+    color: white;
+    font-size: large;
+    font-weight: 600;      
+}
+
 .navlinka{
     padding: 5px 10px 7px 10px;
 }
 
 .navlinka:hover{
     height: 30px;
-
     background-color: var(--dark-gray);
     border-radius: 5px;
 }
@@ -104,7 +110,7 @@ a{
 
 .logoimage-style{
     height: 100%;
-    width: 200px;
+    width: 300px;
     font-size: 30px;
 }
 
@@ -188,14 +194,13 @@ section{
  grid-area: section;
 }
 
-footer{
-   grid-area: footer;
-}
+
 
 .latest-posts {
     display: flex;
     height: 550px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .flex-box-1,
@@ -253,6 +258,10 @@ body span {
    border-radius: 3%;
 }
 
+.class2{
+    margin-left: 10px;
+}
+
 .flex-box-5{
     background-color: var(--silver);
     width: 460px;
@@ -280,16 +289,27 @@ body span {
 
 .person-weeks{
     display: flex;
+    background-color:var(--silver) ;
+    border-radius: 10px; 
 }
+
 
 .imgperson{
     transform: rotate(-15deg);
     border-radius: 10px; 
-    cursor: pointer;
+    cursor: pointer;   
+    margin:20px 20px;
+    height: 150px;
+    width: 150px;   
+   
 }
 
-.imgperson{
+.imgperson:hover{
     transform: rotate(0deg);
+}
+
+.person-weeks div{
+    margin: 20px auto;
 }
 
 .person-weeks div p a{
@@ -300,9 +320,114 @@ body span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    margin: 40px 0 0 0;
 }
 
 .writter-flexbox{
-    display: flex;
+    background-color: var(--silver);
+    display: flex;     
+    margin: 5px 7.5px 15px 7.5px;
+    padding: 10px;
+    border-radius: 5px;
 }
+.img-writter{
+    margin-right: 15px;
+}
+
+.div-writter{
+   
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.div-guides{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.guide-flexbox{
+    width:  500px;
+    margin: 10px 5px ;
+    padding: 25px 10px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    background-color: var(--green-gray);
+    border-radius: 15px;
+}
+.guide-flexbox-3{
+    height: 400px;    
+}
+
+.guide-flexbox-4{
+    height: 600px;
+    margin-top: 10px;
+    margin: 0 5px ; 
+}
+
+.guide-flexbox button
+ {
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.guide-flexbox h1{
+    font-size: 30px;
+}
+
+footer{
+    background-color:var(--l-gray);
+    width: 100%;      
+    grid-area: footer;
+   padding: 0 0 20px 0;
+ }
+
+ footer h2
+ {    
+     display: flex;
+     justify-content: center;
+     margin:50px auto 30px auto ;
+ }
+
+ footer ul{
+     display: flex;
+     flex-wrap: wrap;
+     width: 80%;
+     margin: 0 auto;
+     justify-content: space-evenly;
+ }
+
+
+ footer ul li{
+    margin:0 15px;
+
+ }
+ footer ul li span:hover{
+    background-color: white;    
+ }
+
+ .footer-bottom{
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-between;  
+    margin: 30px 0;
+ }
+.footer-bottom p{    
+    margin: 5px auto;
+}
+
+ .footer-bottom div{
+     display: flex;
+     margin: 15px auto;
+ }
+ .footer-bottom div a{
+     margin: 0 5px;
+ }
+
 
