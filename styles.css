@@ -12,8 +12,8 @@
     margin: 0 auto;
     grid-template-areas:
      "header header header header header"
-     "main main main main main"
-     "aside aside aside aside aside"
+     "main main main main main"    
+     "section section section section section"
      "section section section section section"
      "footer footer footer footer footer";
 }
@@ -41,6 +41,10 @@ header{
     background-color: rgb(108, 112, 112);
     grid-area: header;
 }
+a{
+   text-decoration: none;
+   color: white;
+}
 
 .title-section {
     text-align: center;
@@ -48,14 +52,26 @@ header{
     background-color: rgb(90, 90, 90);
 }
 
-.title-flex {
-    width: 400px;
+/* .title-flex{
+    position: absolute;
+} */
+
+.title-h1{
+    width: auto;
+    margin: 0 35%;
+    background-color: white;
+}
+
+.title-h1-2 {
+    width: auto;
+    margin: 0 43%;
+    background-color: white;
 }
 
 .title-flex-1 {
+    margin-top: -25px;
     float: right;
 }
-
 
 .title-img {
     width: 30px;
@@ -131,10 +147,10 @@ main{
     padding: 50px;
     color: white;
     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-     justify-content: space-between;
-     
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+       
 }
 
 main div h3, main div p{
@@ -173,6 +189,7 @@ main div h3, main div p{
     flex-direction: column;
 }
 
+
 main div span{    
     font-size: 60px;   
 }
@@ -183,12 +200,12 @@ aside{
 }
 
 section{
- background-color: coral;
+ /* background-color: coral; */
  grid-area: section;
 }
 
 footer{
-   background-color: cyan;
+   /* background-color: cyan; */
    grid-area: footer;
 }
 
@@ -198,9 +215,10 @@ footer{
     cursor: pointer;
 }
 
-.flex-box-1 {
-    background-color: rgb(85, 85, 85);
+.flex-box-1 {   
+    background-color: rgb(85, 85, 85);    
 }
+
 
 .flex-box-2 {
     background-color: rgb(63, 63, 63);
@@ -210,12 +228,92 @@ footer{
     background-color: rgb(160, 160, 160);
 }
 
+
+/* 
 .latest-posts > div > * {
    margin: 50px 0;
 }
+ */
+
 
 .arrow-button {
     background-color: grey;
     width: 70px;
     padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.classhover:hover{
+    transform: scale(1.1, 1.1);
+}
+
+/* .empty-space{
+    margin: 15px 0;
+} */
+
+.latest-posts-2{
+    display: flex;
+    margin-top: 15px;
+    /* flex-direction: column; */
+    /* align-items: flex-start;
+    justify-content: space-between; */
+    cursor: pointer;
+
+}
+.flex-box-4{
+   width: 500px;   
+   height: 600px;
+   background-color: rgb(71, 60, 60);
+   border: 1px solid rgb(71, 60, 60);
+   border-radius: 3%;
+}
+
+.flex-box-5{
+    background-color: rgb(236, 225, 225);
+    max-width: 33%;  
+    /* padding: 10px; */
+    height: 600px;
+    position: relative;
+}
+
+.articles-links {
+    width: 200px;
+    font-size: 15px;
+    margin: 40px auto;
+    padding: 0 0  10px 15px;    
+    border-bottom: 4px solid rgb(44, 42, 42);
+}
+
+.articles-links a{   
+    color: black;
+    cursor: pointer;
+  
+}
+
+.person-weeks{
+    display: flex;
+}
+.imgperson{
+    transform: rotate(-15deg);
+    border-radius: 10px; 
+    cursor: pointer;
+}
+.imgperson{
+    transform: rotate(0deg);
+}
+
+.person-weeks div p a{
+    color: rgb(66, 66, 168);
+}
+
+.writter-div{
+    /* height: auto; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.writter-flexbox{
+    display: flex;
 }
