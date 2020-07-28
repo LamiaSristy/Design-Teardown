@@ -335,10 +335,6 @@ button {
   margin: 0 5px;
 }
 
-.person-weeks div p a {
-  color: rgb(66, 66, 168);
-}
-
 .writter-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -418,10 +414,6 @@ button {
   padding: 10px;
   outline: none;
   border: solid 2px black;
-}
-
-.guide-flexbox h1 {
-  font-size: 30px;
 }
 
 footer {
