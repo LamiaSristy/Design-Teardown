@@ -31,20 +31,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
- ul {
+nav ul {
    display: flex;
    justify-content: space-between;
    padding: 15px 10px;
    text-align: center;
    align-items: center;
 }
-
-/* li{
-    list-style: none;
-    color: white;
-    font-size: large;
-    font-weight: 600;      
-} */
 
 header{
     background-color: var(--green-gray);
@@ -59,18 +52,6 @@ a{
     text-align: center;
     padding: 40px;
     background-color: var(--dark-gray);
-}
-
-.title-h1{
-    width: auto;
-    margin: 0 35%;
-    background-color: white;
-}
-
-.title-h1-2 {
-    width: auto;
-    margin: 0 43%;
-    background-color: white;
 }
 
 .title-flex-1 {
@@ -101,10 +82,12 @@ a{
     height: 30px;
     background-color: var(--dark-gray);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .navlinkmore{
     background-color: var(--black);
+    padding:5px;
     border-radius: 5px;
 }
 
@@ -194,8 +177,6 @@ section{
  grid-area: section;
 }
 
-
-
 .latest-posts {
     display: flex;
     height: 550px;
@@ -206,7 +187,9 @@ section{
 .flex-box-1,
 .flex-box-2,
 .flex-box-3,
-.flex-box-5 {
+.flex-box-5,
+.flex-box-6,
+.flex-box-7 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -217,6 +200,7 @@ section{
 body span {
     color: transparent;
     background-color: var(--gray);
+    line-height: 30px;
 }
 
 .flex-box-1 {   
@@ -231,14 +215,36 @@ body span {
     background-color: var(--dark-gray);
 }
 
-.arrow-button {
-    background-color: white;
-    width: 70px;
+.flex-box-5{
+    background-color: var(--silver);  
+}
+
+.flex-box-6 {
+      background-color: var(--blue-gray);
+}
+
+.flex-box-7 {
+       background-color: var(--dark-gray);
+}
+
+button {
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 7px;
+    border: transparent;
+}
+
+.fa-arrow-right {
     color: black;
+    font-size: 30px;
+}
+
+.arrow-button {  
     padding: 20px;
     position: absolute;
     bottom: 0;
     left: 0;
+    background-color: var(--gray);
 }
 
 .classhover:hover{
@@ -252,18 +258,24 @@ body span {
 }
 
 .flex-box-4{
+   text-align: center;
    width: 500px;   
    height: 600px;
    background-color: var(--green-gray);
    border-radius: 3%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
 }
 
 .class2{
     margin-left: 10px;
 }
 
-.flex-box-5{
-    background-color: var(--silver);
+.flex-box-5,
+.flex-box-6,
+.flex-box-7 {
     width: 460px;
     height: 600px;
     position: relative;
@@ -320,16 +332,28 @@ body span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    margin: 40px 0 0 0;
+    margin-top: 40px;
 }
 
 .writter-flexbox{
-    background-color: var(--silver);
     display: flex;     
     margin: 5px 7.5px 15px 7.5px;
     padding: 10px;
     border-radius: 5px;
 }
+
+.writer-1 {
+    background-color: var(--green-gray);
+}
+
+.writer-2 {
+    background-color: var(--dark-gray);
+}
+
+.writer-3 {
+    background-color: var(--blue-gray);
+}
+
 .img-writter{
     margin-right: 15px;
 }
@@ -348,33 +372,43 @@ body span {
     justify-content: center;
 }
 
-.guide-flexbox{
+.guide-flexbox,
+.guide-flexbox-4 {
     width:  500px;
     margin: 10px 5px ;
     padding: 25px 10px 25px 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-self: center;
     background-color: var(--green-gray);
     border-radius: 15px;
 }
+
+.guide-flexbox{
+    justify-content: space-between;
+    align-self: center;
+}
+
 .guide-flexbox-3{
     height: 400px;    
 }
 
-.guide-flexbox-4{
+.guide-flexbox-4 {
     height: 600px;
     margin-top: 10px;
-    margin: 0 5px ; 
+    margin: 0 5px ;
 }
 
-.guide-flexbox button
- {
-    height: 50px;
-    width: 250px;
+.guide-flexbox-4 > * {
+    margin: 10px 0;
+}
+
+.guide-flexbox button,
+.guide-flexbox-4 button {
     border-radius: 10px;
     margin: 0 auto;
+    padding: 10px;
+    outline: none;
+    border: solid 2px black;
 }
 
 .guide-flexbox h1{
@@ -385,7 +419,7 @@ footer{
     background-color:var(--l-gray);
     width: 100%;      
     grid-area: footer;
-   padding: 0 0 20px 0;
+    padding: 0 0 20px 0;
  }
 
  footer h2
@@ -430,4 +464,40 @@ footer{
      margin: 0 5px;
  }
 
+ .smash-memb {
+     height: 330px;
+     position: relative;
+     background-color: var(--blue-gray);
+ }
 
+ .memb-text {
+    width: 50%;
+    margin: 0 auto;
+ }
+
+ .pic-memb-1 {
+     position: absolute;
+     top: 50px;
+     right: -400px;
+ }
+
+ .shipping-box {
+     width: 100%;
+     margin: 20px 0;
+ }
+
+ .smash-book {
+     border-radius: 10px;
+     height: 240px;
+     position: relative;
+ }
+
+ .smash-book li {
+     list-style: none;
+ }
+
+ .pic-memb {
+     position: absolute;
+     right: 150px;
+     top: 70px;
+ }
