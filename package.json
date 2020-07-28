@@ -4,13 +4,14 @@
   "description": "> In this project we created a greyscale heat map of Smashing Magazine webpage.",
   "main": "index.js",
   "dependencies": {
-    "hint": "^6.0.7",
     "stylelint": "^13.3.3",
     "stylelint-scss": "^3.17.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-csstree-validator": "^1.8.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "hint": "^6.0.7"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
