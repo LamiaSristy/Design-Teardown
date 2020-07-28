@@ -1,10 +1,8 @@
-# Project Name
+# DESIGN TEARDOWN
 
-> Write about the project...
+> In this project we created a greyscale heat map of Smashing Magazine webpage.
 
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features...
+![screenshot](img/screenshot.png)
 
 ## Built With
 
@@ -13,41 +11,21 @@ Additional description about the project and its features...
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**Give instructions on setting up your project locally.**
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+[Live Demo Link](https://raw.githack.com/LamiaSristy/Smashing-Magazine-Copy/feature1/index.html)
 
 
 ## Authors
+
+👤 **Lamia Sristy**
+
+- Github: [@LamiaSristy](https://github.com/LamiaSristy)
+
 
 👤 **Daniel Ronan**
 
 - Github: [@DcRonan](https://github.com/DcRonan)
 - Linkedin: [Daniel Ronan](https://www.linkedin.com/in/danronan10/)
 
-👤 **Coding Parter**
-
-- Github: [****](****)
-- Twitter: [****](****)
-- Linkedin: [linkedin](****)
 
 ## 🤝 Contributing
 
