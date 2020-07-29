@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/LamiaSristy/Smashing-Magazine-Copy/feature/index.html)
+[Live Demo Link](https://raw.githack.com/LamiaSristy/Smashing-Magazine-Copy/master/index.html)
 
 
 ## Authors
